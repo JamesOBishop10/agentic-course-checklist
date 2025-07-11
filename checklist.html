@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Course Checklist</title>
+  <title>Course Checklist with Proof</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="progress.js"></script>
 </head>
@@ -13,17 +13,37 @@
     <section class="week">
       <h2>Weeks 1–2: Foundations</h2>
       <ul>
-        <li><input type="checkbox"> Master basic MS Office tasks</li>
-        <li><input type="checkbox"> Complete Six Sigma Green Belt prep</li>
-        <li><input type="checkbox"> Practice interpersonal communication drills</li>
+        <li>
+          <input type="checkbox"> Master basic MS Office tasks<br>
+          <label>Proof of Work (Link):</label>
+          <input type="url" placeholder="Paste link to screenshot, GitHub, or doc" /><br>
+          <label>Summary:</label>
+          <textarea placeholder="Write a short summary of what you did..."></textarea>
+        </li>
+        <li>
+          <input type="checkbox"> Complete Six Sigma Green Belt prep<br>
+          <label>Proof of Work (Link):</label>
+          <input type="url" placeholder="Paste link to course or notes" /><br>
+          <label>Summary:</label>
+          <textarea placeholder="Share insights or milestones hit..."></textarea>
+        </li>
+        <li>
+          <input type="checkbox"> Practice interpersonal communication drills<br>
+          <label>Proof of Work (Link):</label>
+          <input type="url" placeholder="Link to video, doc, or notes" /><br>
+          <label>Summary:</label>
+          <textarea placeholder="What did you learn or try during this task?"></textarea>
+        </li>
       </ul>
     </section>
 
     <section class="goals">
       <h2>🎓 Learning Goals</h2>
       <ul>
-        <li><input type="checkbox" id="nvidia"> Complete 3 NVIDIA Academy courses <span id="badge-nvidia" class="badge hidden">🏅 NVIDIA Certified</span></li>
-        <li><input type="checkbox" id="langchain"> Finish LangChain LangGraph setup <span id="badge-langchain" class="badge hidden">🏅 LangChain Setup Complete</span></li>
+        <li><input type="checkbox" id="nvidia"> Complete 3 NVIDIA Academy courses 
+            <span id="badge-nvidia" class="badge hidden">🏅 NVIDIA Certified</span></li>
+        <li><input type="checkbox" id="langchain"> Finish LangChain LangGraph setup 
+            <span id="badge-langchain" class="badge hidden">🏅 LangChain Setup Complete</span></li>
         <li><input type="checkbox"> Write summary of Agentic AI Blueprint article</li>
       </ul>
     </section>
