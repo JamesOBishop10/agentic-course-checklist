@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Course Checklist with Proof and Tracks</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="progress.js"></script>
 </head>
+
 <body class="checklist-page">
-  <header><h1>🔥 Agentic Course Checklist — Powered by Proof</h1></header>
+  <header>
+    <h1>🔥 Agentic Course Checklist — Powered by Proof</h1>
+  </header>
   <main>
     <section class="week">
       <h2>Weeks 1–2: Foundations</h2>
@@ -16,55 +20,55 @@
       <h3>🧰 General Skills</h3>
       <ul>
         <li>
-          <input type="checkbox"> Master basic MS Office tasks (Word, Excel: formatting, formulas, charts)
+          <input type="checkbox" id="ms-office-tasks"> <label for="ms-office-tasks">Master basic MS Office tasks (Word, Excel: formatting, formulas, charts)</label>
           <br>
-          <label>Proof of Work (Link):</label>
-          <input type="url" placeholder="Paste link to screenshot, GitHub, or doc" />
+          <label for="ms-office-proof">Proof of Work (Link):</label>
+          <input type="url" id="ms-office-proof" title="Proof of mastering MS Office tasks" placeholder="Paste link to screenshot, GitHub, or doc" />
         </li>
         <li>
-          <input type="checkbox"> Complete Six Sigma Green Belt prep  
+          <input type="checkbox" id="six-sigma"> <label for="six-sigma">Complete Six Sigma Green Belt prep</label>
           <br>
-          <a href="https://alison.com/tag/green-belt" target="_blank">Go to Alison Green Belt Courses</a>
+          <a href="https://alison.com/tag/green-belt" target="_blank" rel="noopener">Go to Alison Green Belt Courses</a>
         </li>
         <li>
-          <input type="checkbox"> Practice interpersonal communication drills
+          <input type="checkbox" id="comm-drills"> <label for="comm-drills">Practice interpersonal communication drills</label>
           <br>
-          <a href="https://www.skillsoft.com/caisy" target="_blank">Try Skillsoft Drills</a>
+          <a href="https://www.skillsoft.com/caisy" target="_blank" rel="noopener">Try Skillsoft Drills</a>
           <br>
-          <label>Proof of Work (Link):</label>
-          <input type="url" placeholder="Link to video, doc, or notes" />
+          <label for="comm-drills-proof">Proof of Work (Link):</label>
+          <input type="url" id="comm-drills-proof" title="Proof of practicing communication drills" placeholder="Link to video, doc, or notes" />
         </li>
       </ul>
 
       <h3>💻 Front-End Track</h3>
       <ul>
         <li>
-          <input type="checkbox"> Learn HTML basics (semantic tags, forms, links)
+          <input type="checkbox" id="html-basics"> <label for="html-basics">Learn HTML basics (semantic tags, forms, links)</label>
           <br>
-          <label>Proof of Work:</label>
-          <input type="url" placeholder="Link to CodePen, GitHub, or screenshot" />
+          <label for="html-basics-proof">Proof of Work:</label>
+          <input type="url" id="html-basics-proof" title="Proof of learning HTML basics" placeholder="Link to CodePen, GitHub, or screenshot" />
         </li>
         <li>
-          <input type="checkbox"> Start CSS Foundations (selectors, colors, box model)
+          <input type="checkbox" id="css-foundations"> <label for="css-foundations">Start CSS Foundations (selectors, colors, box model)</label>
           <br>
-          <label>Notes or link:</label>
-          <input type="url" placeholder="Link to notes, blog, or styling example" />
+          <label for="css-foundations-proof">Notes or link:</label>
+          <input type="url" id="css-foundations-proof" title="Notes or link for CSS Foundations" placeholder="Link to notes, blog, or styling example" />
         </li>
       </ul>
 
       <h3>🛠 Back-End Track</h3>
       <ul>
         <li>
-          <input type="checkbox"> Explore what a server is and how back-end differs from front-end
+          <input type="checkbox" id="server-explore"> <label for="server-explore">Explore what a server is and how back-end differs from front-end</label>
           <br>
-          <label>Write a 1–2 sentence reflection:</label>
-          <textarea placeholder="What did you learn about the client-server model?"></textarea>
+          <label for="server-reflection">Write a 1–2 sentence reflection:</label>
+          <textarea id="server-reflection" title="Reflection on client-server model" placeholder="What did you learn about the client-server model?"></textarea>
         </li>
         <li>
-          <input type="checkbox"> Read or watch intro to databases (PostgreSQL, MySQL, or MongoDB)
+          <input type="checkbox" id="db-intro"> <label for="db-intro">Read or watch intro to databases (PostgreSQL, MySQL, or MongoDB)</label>
           <br>
-          <label>Link to article or video:</label>
-          <input type="url" placeholder="Paste link here" />
+          <label for="db-intro-link">Link to article or video:</label>
+          <input type="url" id="db-intro-link" title="Intro to databases resource" placeholder="Paste link here" />
         </li>
       </ul>
     </section>
@@ -72,13 +76,16 @@
     <section class="goals">
       <h2>🎓 Learning Goals</h2>
       <ul>
-        <li><input type="checkbox" id="nvidia"> Complete 3 NVIDIA Academy courses 
-            <span id="badge-nvidia" class="badge hidden">🏅 NVIDIA Certified</span></li>
-        <li><input type="checkbox" id="langchain"> Finish LangChain LangGraph setup 
-            <span id="badge-langchain" class="badge hidden">🏅 LangChain Setup Complete</span></li>
+        <li><input type="checkbox" id="nvidia"> Complete 3 NVIDIA Academy courses
+          <span id="badge-nvidia" class="badge hidden">🏅 NVIDIA Certified</span>
+        </li>
+        <li><input type="checkbox" id="langchain"> Finish LangChain LangGraph setup
+          <span id="badge-langchain" class="badge hidden">🏅 LangChain Setup Complete</span>
+        </li>
         <li><input type="checkbox"> Write summary of Agentic AI Blueprint article</li>
       </ul>
     </section>
   </main>
 </body>
+
 </html>
